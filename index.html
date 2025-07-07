@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="Yl24l3nVh5M_MLMw5okYMUt95FIPJPvGFRGj5IgpFwE" />
+  <title>C. Shekhar | Poet & Lyricist</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+    nav a:hover {
+      background: #444;
+      border-radius: 4px;
+    }
+    .tab {
+      display: none;
+      padding: 2rem;
+    }
+    .active {
+      display: block;
+    }
+    .poem {
+      white-space: pre-wrap;
+      font-family: "serif";
+      line-height: 1.8;
+      font-size: 1.1rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .full-photo {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+    .icon {
+      font-size: 2rem;
+      color: #555;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Photo" />
+    <h1>C. Shekhar</h1>
+    <p>Poet | Writer | Lyricist</p>
+  </header>
+  <nav>
+    <a href="#" onclick="showTab('about')">About</a>
+    <a href="#" onclick="showTab('writings')">Writings</a>
+    <a href="#" onclick="showTab('contact')">Contact</a>
+  </nav>
+
+  <section id="about" class="tab active">
+    <div style="text-align: center;">
+      <img src="profile.jpg" alt="Full Photo" class="full-photo" />
+      <p style="margin-top: 1.5rem; font-size: 1.1rem;">
+        I love writing.<br>
+        It flows from my heart and I hold a mirror to it.<br>
+        I write for the sake of writing.<br><br>
+        Writer | Poet | Songwriter
+      </p>
+    </div>
+  </section>
+
+  <section id="writings" class="tab">
+    <div class="poem">
+      <h2>Rona Aaya</h2>
+Phir, na jaane kyon kis baat par mujhe rona aaya  
+Khud ki baatein khud se karke khud par hi rona aaya  
+
+Kya wajood mera, kyon laaya mujhe yahaan par,  
+Kya galti meri, laakar mujhe yahaan,  
+Galti meri baat kar, mere wajood ko mujh par rona aaya  
+
+Gairon ka gila nahi mujhe, mila apno se yeh tohfa  
+Shabaab-e-dil dikhayi ka,  
+Apni hi baat sunkar, apni hi dil lagayi par rona aaya  
+
+Mila samandar nadiyon ko,  
+Mila aasmaan sooraj ko  
+Samaa ke khud ko,  
+Jala ke khud ko,  
+Khud hi ko mitaane par rona aaya  
+
+Mitta ja raha hoon, jalta ja raha hoon  
+Mitkar, jalkar aayi labon ki,  
+Is hansi par rona aaya  
+
+Phir, na jaane kyon kis baat par mujhe,  
+Phir rona aaya
+
+---
+
+🗓️ 26 January 2025, 07:41:40  
+✍️ C. Shekhar
+    </div>
+
+    <div class="poem">
+      <h2>Ek Nazar Yesi Bhi</h2>
+      <p><em>Coming Soon...</em></p>
+    </div>
+  </section>
+
+  <section id="contact" class="tab" style="text-align: center; padding: 3rem;">
+    <a href="mailto:theunknown3511@gmail.com" class="icon">📩</a>
+    <p style="margin-top: 0.5rem; font-weight: bold;">Contact Us</p>
+  </section>
+
+  <footer>
+    &copy; 2025 C. Shekhar | All rights reserved
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
