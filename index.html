@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,7 @@
 </head>
 <body>
   <header>
+    <div id="slider" style="font-size: 1.1rem; color: #fff; padding-bottom: 1rem;"></div>
     <img src="profile.jpg" alt="Profile Photo" />
     <h1>C. Shekhar</h1>
     <p>Poet | Writer | Lyricist</p>
@@ -46,10 +46,12 @@
         I write for the sake of writing.<br><br>
         Writer | Poet | Songwriter
       </p>
+      <button onclick="sharePoem('about')">📤 Share Profile</button><br>
+      <a href='https://wa.me/?text=https://cshekhar10.github.io#about' target='_blank'>📲 WhatsApp</a><br>
+      <a href='https://twitter.com/intent/tweet?text=About C. Shekhar https://cshekhar10.github.io#about' target='_blank'>🐦 Twitter</a><br>
+      <a href='https://www.instagram.com/' target='_blank'>📸 Instagram</a>
     </div>
-  </section>
-
-  <section id="writings" class="tab">
+  </section><section id="writings" class="tab">
     <div class="title" onclick="togglePoem('poem1')">📌 Rona Aaya</div>
     <div id="poem1" class="poem">
 Phir, na jaane kyon kis baat par mujhe rona aaya  
@@ -78,7 +80,7 @@ Phir rona aaya
 
 🗓️ 26 January 2025, 07:41:40  
 ✍️ C. Shekhar  
-<br><br>
+
 <button onclick="sharePoem('rona')">📤 Share it</button><br>
 <a href='https://wa.me/?text=https://cshekhar10.github.io#rona' target='_blank'>📲 WhatsApp</a><br>
 <a href='https://twitter.com/intent/tweet?text=Rona Aaya by C. Shekhar https://cshekhar10.github.io#rona' target='_blank'>🐦 Twitter</a><br>
@@ -107,15 +109,13 @@ Aur na mujhe roshni de sakta hai
 
 🗓️ 30 April 2025, 09:14:19  
 ✍️ C. Shekhar  
-<br><br>
+
 <button onclick="sharePoem('nazar')">📤 Share it</button><br>
 <a href='https://wa.me/?text=https://cshekhar10.github.io#nazar' target='_blank'>📲 WhatsApp</a><br>
 <a href='https://twitter.com/intent/tweet?text=Ek Nazar Yesi Bhi by C. Shekhar https://cshekhar10.github.io#nazar' target='_blank'>🐦 Twitter</a><br>
 <a href='https://www.instagram.com/' target='_blank'>📸 Instagram</a>
     </div>
-  </section>
-
-  <section id="contact" class="tab" style="text-align: center; padding: 3rem;">
+  </section><section id="contact" class="tab" style="text-align: center; padding: 3rem;">
     <a href="mailto:theunknown3511@gmail.com" class="icon">📩</a>
     <p style="margin-top: 0.5rem; font-weight: bold;">Contact Us</p>
   </section>
@@ -139,7 +139,7 @@ Aur na mujhe roshni de sakta hai
     }
 
     function sharePoem(id) {
-      const link = `${window.location.origin}#${id}`;
+      const link = `https://cshekhar10.github.io#${id}`;
       if (navigator.share) {
         navigator.share({
           title: 'Poem by C. Shekhar',
@@ -152,7 +152,24 @@ Aur na mujhe roshni de sakta hai
         });
       }
     }
+
+    const sliderTexts = [
+      "Phir, na jaane kyon kis baat par mujhe rona aaya...",
+      "Kyun chahoon us chaand ko, jo mujhse itna door hai...",
+      "Jismein na ho khud ka ujala, aur na mujhe roshni de sakta hai..."
+    ];
+    let currentText = 0;
+    function updateSlider() {
+      const slider = document.getElementById('slider');
+      slider.style.opacity = 0;
+      setTimeout(() => {
+        slider.textContent = sliderTexts[currentText];
+        slider.style.opacity = 1;
+        currentText = (currentText + 1) % sliderTexts.length;
+      }, 500);
+    }
+    setInterval(updateSlider, 3000);
+    window.onload = updateSlider;
   </script>
 </body>
-  </html>
-    
+</html>
