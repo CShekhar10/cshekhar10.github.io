@@ -3,31 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="Yl24l3nVh5M_MLMw5okYMUt95FIPJPvGFRGj5IgpFwE" />
-  <title>C. Shekhar | Poet & Lyricist</title>
+  <title>SPureRuh | Home</title>
   <style>
     body { font-family: sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
     header { background: #111; color: #fff; padding: 2rem 1rem 1rem 1rem; text-align: center; }
-    header img { width: 150px; height: 150px; border-radius: 50%; display: block; margin: 0 auto 1rem auto; box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
     nav { background: #222; display: flex; justify-content: center; gap: 1rem; padding: 0.5rem; }
     nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; }
     nav a:hover { background: #444; border-radius: 4px; }
     .tab { display: none; padding: 2rem; }
     .active { display: block; }
-    .full-photo { width: 100%; height: auto; margin-top: 1rem; border-radius: 10px; box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); }
-    .title { cursor: pointer; font-weight: bold; font-size: 1.2rem; margin: 1rem auto; padding: 1rem; max-width: 400px; border: 1px solid #ccc; border-radius: 6px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .poem { display: none; margin-top: 1rem; font-size: 1.1rem; line-height: 1.8; white-space: pre-wrap; background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); max-width: 800px; margin-left: auto; margin-right: auto; }
     footer { text-align: center; font-size: 0.9rem; color: #777; margin-top: 4rem; margin-bottom: 2rem; }
-    .icon { font-size: 2rem; color: #555; text-decoration: none; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.95rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
+    .poem-link { display: block; margin: 1rem 0; font-size: 1.1rem; }
+    button { margin-top: 0.5rem; padding: 0.4rem 1rem; font-size: 0.9rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
     button:hover { background-color: #0056b3; }
+    .full-photo { width: 100%; max-width: 280px; height: auto; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 1rem; }
   </style>
 </head>
 <body>
   <header>
-    <div id="slider" style="font-size: 1.1rem; color: #fff; padding-bottom: 1rem;"></div>
-    <img src="profile.jpg" alt="Profile Photo" />
-    <h1>C. Shekhar</h1>
+    <h1>SPureRuh aka C. Shekhar</h1>
     <p>Poet | Writer | Lyricist</p>
   </header>
 
@@ -39,89 +33,31 @@
 
   <section id="about" class="tab active">
     <div style="text-align: center;">
-      <img src="profile.jpg" alt="Full Photo" class="full-photo" />
+      <img src="profile.jpg" alt="Profile Photo" class="full-photo" />
       <p style="margin-top: 1.5rem; font-size: 1.1rem;">
         I love writing.<br>
         It flows from my heart and I hold a mirror to it.<br>
         I write for the sake of writing.<br><br>
         Writer | Poet | Songwriter
       </p>
-      <button onclick="sharePoem('about')">📤 Share Profile</button><br>
-      <a href='https://wa.me/?text=https://cshekhar10.github.io#about' target='_blank'>📲 WhatsApp</a><br>
-      <a href='https://twitter.com/intent/tweet?text=About C. Shekhar https://cshekhar10.github.io#about' target='_blank'>🐦 Twitter</a><br>
-      <a href='https://www.instagram.com/' target='_blank'>📸 Instagram</a>
+      <button onclick="sharePage()">📤 Share Profile</button><br>
+      <a href="https://www.instagram.com/spureruh/" target="_blank">📸 Instagram</a>
     </div>
-  </section><section id="writings" class="tab">
-    <div class="title" onclick="togglePoem('poem1')">📌 Rona Aaya</div>
-    <div id="poem1" class="poem">
-Phir, na jaane kyon kis baat par mujhe rona aaya  
-Khud ki baatein khud se karke khud par hi rona aaya  
+  </section>
 
-Kya wajood mera, kyon laaya mujhe yahaan par,  
-Kya galti meri, laakar mujhe yahaan,  
-Galti meri baat kar, mere wajood ko mujh par rona aaya  
+  <section id="writings" class="tab">
+    <h2>📖 Writings</h2>
+    <a href="rona-aaya.html" target="_blank" class="poem-link">📌 Rona Aaya</a>
+    <a href="ek-nazar-yesi-bhi.html" target="_blank" class="poem-link">📌 Ek Nazar Yesi Bhi</a>
+  </section>
 
-Gairon ka gila nahi mujhe, mila apno se yeh tohfa  
-Shabaab-e-dil dikhayi ka,  
-Apni hi baat sunkar, apni hi dil lagayi par rona aaya  
-
-Mila samandar nadiyon ko,  
-Mila aasmaan sooraj ko  
-Samaa ke khud ko,  
-Jala ke khud ko,  
-Khud hi ko mitaane par rona aaya  
-
-Mitta ja raha hoon, jalta ja raha hoon  
-Mitkar, jalkar aayi labon ki,  
-Is hansi par rona aaya  
-
-Phir, na jaane kyon kis baat par mujhe,  
-Phir rona aaya  
-
-🗓️ 26 January 2025, 07:41:40  
-✍️ C. Shekhar  
-
-<button onclick="sharePoem('rona')">📤 Share it</button><br>
-<a href='https://wa.me/?text=https://cshekhar10.github.io#rona' target='_blank'>📲 WhatsApp</a><br>
-<a href='https://twitter.com/intent/tweet?text=Rona Aaya by C. Shekhar https://cshekhar10.github.io#rona' target='_blank'>🐦 Twitter</a><br>
-<a href='https://www.instagram.com/' target='_blank'>📸 Instagram</a>
-    </div>
-
-    <div class="title" onclick="togglePoem('poem2')">📌 Ek Nazar Yesi Bhi</div>
-    <div id="poem2" class="poem">
-Kyun chahoon us chaand ko, jo mujhse itna door hai  
-Kyun chahoon use, jise khud par itna gurur hai  
-Kyun chahoon use jo, kaate laakh chakkar dharti ke, par mere liye majboor hai  
-Maine suna hai aksar door ki cheez acchi lagti hai  
-Kya yeh accha lagna kahin is faasle se to nahi  
-Kehte hain chaand sa sheetal kuch nahi,  
-Kya nahi dekha inhone iska banjarpan,  
-Bas bharam hai aur kuch nahi  
-Jo ho banjar khud se hi, bhala kya sheetalta de sakta hai  
-Jismein na ho kheenchne ki chaah, bhala kya sthirta de sakta hai  
-Jismein na aaye hawa ke jhonke, bhala kya saans woh de sakta hai  
-Jo khud hi zinda laash bana hai, kya mujhe jeevan de sakta hai  
-Kyun chahoon is chaand ko main,  
-Jo hokar sheetal khud se hi, na mujhe paani de sakta hai  
-Kyun chahoon is chaand ko main  
-Jismein na ho khud ka ujala  
-Aur na mujhe roshni de sakta hai  
-
-🗓️ 30 April 2025, 09:14:19  
-✍️ C. Shekhar  
-
-<button onclick="sharePoem('nazar')">📤 Share it</button><br>
-<a href='https://wa.me/?text=https://cshekhar10.github.io#nazar' target='_blank'>📲 WhatsApp</a><br>
-<a href='https://twitter.com/intent/tweet?text=Ek Nazar Yesi Bhi by C. Shekhar https://cshekhar10.github.io#nazar' target='_blank'>🐦 Twitter</a><br>
-<a href='https://www.instagram.com/' target='_blank'>📸 Instagram</a>
-    </div>
-  </section><section id="contact" class="tab" style="text-align: center; padding: 3rem;">
+  <section id="contact" class="tab" style="text-align: center; padding: 3rem;">
     <a href="mailto:theunknown3511@gmail.com" class="icon">📩</a>
     <p style="margin-top: 0.5rem; font-weight: bold;">Contact Us</p>
   </section>
 
   <footer>
-    &copy; 2025 C. Shekhar | All rights reserved
+    &copy; 2025 SPureRuh | All rights reserved
   </footer>
 
   <script>
@@ -130,46 +66,20 @@ Aur na mujhe roshni de sakta hai
       document.getElementById(id).classList.add('active');
     }
 
-    function togglePoem(id) {
-      const allPoems = document.querySelectorAll('.poem');
-      allPoems.forEach(poem => {
-        poem.style.display = (poem.id === id && poem.style.display !== 'block') ? 'block' : 'none';
-        if (poem.id !== id) poem.style.display = 'none';
-      });
-    }
-
-    function sharePoem(id) {
-      const link = `https://cshekhar10.github.io#${id}`;
+    function sharePage() {
+      const url = window.location.href;
       if (navigator.share) {
         navigator.share({
-          title: 'Poem by C. Shekhar',
-          text: 'Read this beautiful piece by C. Shekhar',
-          url: link
-        }).catch(err => console.log('Sharing failed', err));
+          title: 'SPureRuh | Profile',
+          text: 'Check out the soulful writings of SPureRuh',
+          url: url
+        }).catch(console.error);
       } else {
-        navigator.clipboard.writeText(link).then(() => {
-          alert('Link copied! आप इसे कहीं भी शेयर कर सकते हैं।');
+        navigator.clipboard.writeText(url).then(() => {
+          alert('🔗 Link copied! अब आप इसे कहीं भी शेयर कर सकते हैं।');
         });
       }
     }
-
-    const sliderTexts = [
-      "Phir, na jaane kyon kis baat par mujhe rona aaya...",
-      "Kyun chahoon us chaand ko, jo mujhse itna door hai...",
-      "Jismein na ho khud ka ujala, aur na mujhe roshni de sakta hai..."
-    ];
-    let currentText = 0;
-    function updateSlider() {
-      const slider = document.getElementById('slider');
-      slider.style.opacity = 0;
-      setTimeout(() => {
-        slider.textContent = sliderTexts[currentText];
-        slider.style.opacity = 1;
-        currentText = (currentText + 1) % sliderTexts.length;
-      }, 500);
-    }
-    setInterval(updateSlider, 3000);
-    window.onload = updateSlider;
   </script>
 </body>
-</html>
+  </html>
