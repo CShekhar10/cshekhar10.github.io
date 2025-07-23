@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Rona Aaya | SPureRuh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body { font-family: sans-serif; background: #fff; color: #222; padding: 2rem; max-width: 800px; margin: auto; }
+    h1 { text-align: center; }
+    pre { white-space: pre-wrap; font-size: 1.1rem; line-height: 1.7; }
+    footer { text-align: center; font-size: 0.9rem; color: #777; margin-top: 4rem; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.95rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+
+<h1>Rona Aaya</h1>
+<p><strong>✍️ SPureRuh aka C. Shekhar</strong><br>🗓️ 26 January 2025, 07:41:40</p>
+
+<pre>
+Phir, na jaane kyon kis baat par mujhe rona aaya  
+Khud ki baatein khud se karke khud par hi rona aaya  
+Kya wajood mera, kyun laya mujhe yahaan par, kya galti meri  
+Lakar mujhe yahaan, galti meri, baat kar, mere wajood ko  
+Mujh par rona aaya  
+Gairon ka gila nahi mujhe, mila apnon se yeh tohfa  
+Shabaab dil dikhayi ka  
+Apni hi baat sunkar, apni hi dil lagayi par rona aaya  
+Mila samandar nadiyon ko  
+Mila aasman sooraj ko  
+Samaa ke khud ko  
+Jala ke khud ko  
+Khud hi ko mitane par rona aaya  
+Mit’ta ja raha hoon, jalta ja raha hoon  
+Mitkar, jalkar aayi labon ki  
+Is hansi par rona aaya  
+Phir, na jaane kyon kis baat par mujhe, phir rona aaya।
+</pre>
+
+<button onclick="sharePoem()">📤 Share</button>
+
+<footer>
+  &copy; 2025 SPureRuh. All rights reserved.
+</footer>
+
+<script>
+function sharePoem() {
+  const url = window.location.href;
+  if (navigator.share) {
+    navigator.share({
+      title: 'Rona Aaya — SPureRuh',
+      text: 'Read this soulful piece by SPureRuh',
+      url: url
+    }).catch(console.error);
+  } else {
+    navigator.clipboard.writeText(url).then(() => {
+      alert('🔗 Link copied! Aap ise kahin bhi share kar sakte hain.');
+    });
+  }
+}
+</script>
+
+</body>
+</html>
