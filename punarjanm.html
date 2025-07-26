@@ -4,13 +4,45 @@
   <meta charset="UTF-8">
   <title>PUNARJANM — Ek Kalpna ya Kathor Sach | SPureRuh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A soulful reflection on rebirth — not after death, but while living. A deep poetic essay by SPureRuh aka C. Shekhar.">
+
+  <!-- OG Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="PUNARJANM — Ek Kalpna ya Kathor Sach | SPureRuh" />
+  <meta property="og:description" content="A soulful reflection on rebirth — not after death, but while living. A poetic essay by SPureRuh aka C. Shekhar." />
+  <meta property="og:url" content="https://cshekhar10.github.io/punarjanm.html" />
+  <meta property="og:image" content="https://cshekhar10.github.io/images/og-punarjanm.jpg" />
+  <meta property="og:site_name" content="SPureRuh" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cshekhar10.github.io/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJXD5F8JH2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJXD5F8JH2');
+  </script>
+
   <style>
-    body { font-family: sans-serif; background: #fff; color: #222; padding: 2rem; max-width: 850px; margin: auto; }
-    h1 { text-align: center; }
-    pre { white-space: pre-wrap; font-size: 1.05rem; line-height: 1.7; }
+    body { font-family: sans-serif; background: #fff; color: #222; padding: 2rem; max-width: 900px; margin: auto; }
+    h1 { text-align: center; font-size: 1.8rem; }
+    pre { white-space: pre-wrap; font-size: 1.08rem; line-height: 1.7; }
     footer { text-align: center; font-size: 0.9rem; color: #777; margin-top: 4rem; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.95rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
-    button:hover { background-color: #0056b3; }
+    .btn-wrap { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    button, .home-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button:hover, .home-btn:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
@@ -94,7 +126,7 @@
 हम बहुत ही शंकोची इंसान होते हैं की कहीं किसी बात का किसी को बुरा न लग जाए ,
 किसी को चोट ना पहुंचा दे
 
-अगर सच से किसी को चोट लगती है तो लगनेदो बशर्ते चोट किसी स्वार्थ बस नहीं हो ,
+अगर सच से किसी को चोट लगती है तो लगने दो बशर्ते चोट किसी स्वार्थ बस नहीं हो ,
 आपने या किसी बदले की भावना से अगर आप किसी को चोट देके उसे खुद की तरफ मोडना चाहे तो ऐसी चोट लगने दो,
 क्योंकि अगर आज चोट नहीं लगेगी तो कल, कल नहीं तो फिर कभी...
 
@@ -132,7 +164,10 @@
 🗓️ 23 July 2025 5:35:46 AM
 </pre>
 
-<button onclick="sharePoem()">📤 Share</button>
+<div class="btn-wrap">
+  <a href="index.html" class="home-btn">🏠 Home</a>
+  <button onclick="sharePoem()">📤 Share</button>
+</div>
 
 <footer>
   &copy; 2025 SPureRuh. All rights reserved.
@@ -144,7 +179,7 @@ function sharePoem() {
   if (navigator.share) {
     navigator.share({
       title: 'PUNARJANM — SPureRuh',
-      text: 'Read this heartfelt essay by SPureRuh',
+      text: 'Read this soulful essay by SPureRuh',
       url: url
     }).catch(console.error);
   } else {
@@ -156,4 +191,4 @@ function sharePoem() {
 </script>
 
 </body>
-</html>
+  </html>
