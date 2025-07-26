@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ek Nazar Yesi Bhi | SPureRuh</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A soulful nazm by SPureRuh aka C. Shekhar — questioning desire, distance, and illusion of light.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJXD5F8JH2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJXD5F8JH2');
+  </script>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Ek Nazar Yesi Bhi | SPureRuh" />
+  <meta property="og:description" content="A soulful view by SPureRuh aka C. Shekhar — questioning desire, distance, and the illusion of light." />
+  <meta property="og:url" content="https://cshekhar10.github.io/ek-nazar-yesi-bhi.html" />
+  <meta property="og:image" content="https://cshekhar10.github.io/images/og-eknazar.jpg" />
+  <meta property="og:site_name" content="SPureRuh Official" />
+
   <style>
     body { font-family: sans-serif; background: #fff; color: #222; padding: 2rem; max-width: 800px; margin: auto; }
     h1 { text-align: center; }
@@ -11,14 +31,22 @@
     footer { text-align: center; font-size: 0.9rem; color: #777; margin-top: 4rem; }
     button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.95rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
     button:hover { background-color: #0056b3; }
+    .top-buttons { text-align: center; margin-bottom: 2rem; }
+    .top-buttons a, .top-buttons button { margin: 0 5px; }
   </style>
 </head>
+
 <body>
 
-<h1>Ek Nazar Yesi Bhi</h1>
-<p><strong>✍️ SPureRuh aka C. Shekhar</strong><br>🗓️ 30 April 2025, 09:14:19</p>
+  <div class="top-buttons">
+    <a href="index.html" style="text-decoration: none; padding: 8px 16px; background: #111; color: white; border-radius: 5px;">🏠 Home</a>
+    <button onclick="sharePoem()">📤 Share</button>
+  </div>
 
-<pre>
+  <h1>Ek Nazar Yesi Bhi</h1>
+  <p><strong>✍️ SPureRuh aka C. Shekhar</strong><br>🗓️ 30 April 2025, 09:14:19</p>
+
+  <pre>
 Kyon chahoon us chaand ko, jo mujhse itna door hai  
 Kyon chahoon use, jise khud par itna guroor hai  
 Kyon chahoon use jo, kaate laakh chakkar dharti ke,  
@@ -40,30 +68,28 @@ Jo hokar sheetal khud se hi, na mujhe paani de sakta hai
 Kyon chahoon is chaand ko main,  
 Jisme na ho khud ka ujaala,  
 Aur na mujhe roshni de sakta hai।
-</pre>
+  </pre>
 
-<button onclick="sharePoem()">📤 Share</button>
+  <footer>
+    &copy; 2025 SPureRuh. All rights reserved.
+  </footer>
 
-<footer>
-  &copy; 2025 SPureRuh. All rights reserved.
-</footer>
-
-<script>
-function sharePoem() {
-  const url = window.location.href;
-  if (navigator.share) {
-    navigator.share({
-      title: 'Ek Nazar Yesi Bhi — SPureRuh',
-      text: 'Read this heartfelt nazm by SPureRuh',
-      url: url
-    }).catch(console.error);
-  } else {
-    navigator.clipboard.writeText(url).then(() => {
-      alert('🔗 Link copied! Aap ise kahin bhi share kar sakte hain.');
-    });
-  }
-}
-</script>
+  <script>
+    function sharePoem() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({
+          title: 'Ek Nazar Yesi Bhi — SPureRuh',
+          text: 'Read this soulful nazm by SPureRuh',
+          url: url
+        }).catch(console.error);
+      } else {
+        navigator.clipboard.writeText(url).then(() => {
+          alert('🔗 Link copied! Aap ise kahin bhi share kar sakte hain.');
+        });
+      }
+    }
+  </script>
 
 </body>
 </html>
