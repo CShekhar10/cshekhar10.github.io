@@ -4,13 +4,46 @@
   <meta charset="UTF-8">
   <title>Rona Aaya | SPureRuh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A heartfelt poem by SPureRuh reflecting deep emotional pain and introspection.">
+  <meta name="keywords" content="Rona Aaya, SPureRuh, poem, soulful, Hindi poetry, emotional writing, C Shekhar" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Rona Aaya | SPureRuh" />
+  <meta property="og:description" content="A heartfelt poem by SPureRuh reflecting deep emotional pain and self-introspection." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cshekhar10.github.io/rona-aaya.html" />
+  <meta property="og:image" content="https://cshekhar10.github.io/images/og-rona.jpg" />
+  <meta property="og:site_name" content="SPureRuh" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cshekhar10.github.io/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJXD5F8JH2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJXD5F8JH2');
+  </script>
+
   <style>
     body { font-family: sans-serif; background: #fff; color: #222; padding: 2rem; max-width: 800px; margin: auto; }
-    h1 { text-align: center; }
+    h1 { text-align: center; font-size: 1.7rem; }
     pre { white-space: pre-wrap; font-size: 1.1rem; line-height: 1.7; }
     footer { text-align: center; font-size: 0.9rem; color: #777; margin-top: 4rem; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.95rem; border-radius: 5px; border: none; background-color: #007bff; color: white; cursor: pointer; }
-    button:hover { background-color: #0056b3; }
+    .btn-wrap { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    button, .home-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button:hover, .home-btn:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
@@ -38,7 +71,10 @@ Is hansi par rona aaya
 Phir, na jaane kyon kis baat par mujhe, phir rona aaya।
 </pre>
 
-<button onclick="sharePoem()">📤 Share</button>
+<div class="btn-wrap">
+  <a href="index.html" class="home-btn">🏠 Home</a>
+  <button onclick="sharePoem()">📤 Share</button>
+</div>
 
 <footer>
   &copy; 2025 SPureRuh. All rights reserved.
