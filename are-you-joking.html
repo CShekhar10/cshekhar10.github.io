@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Are You Joking? — An Emotional Joke | SPureRuh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An emotional satire by SPureRuh blending truth and irony. Coming soon.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Are You Joking? — An Emotional Joke | SPureRuh" />
+  <meta property="og:description" content="An emotional satire by SPureRuh blending truth and irony. Coming soon." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cshekhar10.github.io/are-you-joking.html" />
+  <meta property="og:image" content="https://cshekhar10.github.io/preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJXD5F8JH2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HJXD5F8JH2');
+  </script>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Are You Joking? — An Emotional Joke",
+    "author": {
+      "@type": "Person",
+      "name": "SPureRuh aka C. Shekhar"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "SPureRuh"
+    },
+    "mainEntityOfPage": "https://cshekhar10.github.io/are-you-joking.html",
+    "description": "An emotional satire by SPureRuh blending truth and irony. Coming soon."
+  }
+  </script>
+
+  <!-- Style -->
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #000;
+      color: #eee;
+      padding: 2rem;
+      max-width: 850px;
+      margin: auto;
+    }
+    h1 { text-align: center; margin-bottom: 1rem; }
+    pre {
+      white-space: pre-wrap;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .home-link {
+      display: block;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="home-link">
+    <a href="index.html" style="color:#0af; text-decoration: none;">🏠 Home</a>
+  </div>
+
+  <h1>🎭 Are You Joking? — An Emotional Joke</h1>
+
+  <pre>
+Coming Soon...
+An emotional punch of poetry and truth.
+By SPureRuh aka C. Shekhar
+  </pre>
+
+  <button onclick="sharePoem()">📤 Share</button>
+
+  <footer>
+    &copy; 2025 SPureRuh. All rights reserved.
+  </footer>
+
+  <script>
+    function sharePoem() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({
+          title: 'Are You Joking? — SPureRuh',
+          text: 'Read this upcoming emotional satire by SPureRuh',
+          url: url
+        }).catch(console.error);
+      } else {
+        navigator.clipboard.writeText(url).then(() => {
+          alert('🔗 Link copied! Aap ise kahin bhi share kar sakte hain.');
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
