@@ -97,19 +97,17 @@
 
   <div class="poem-link">
     🎶 KENDAL
-    <div style="margin-top:0.5rem;">
-      <iframe width="100%" height="180"
-        src="https://www.youtube.com/embed/Wdt1i_Hf-i8?si=6JJ9YCzvwOMUpoN5"
-        title="KENDAL – SPureRuh"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <small>
-      <a href="https://open.spotify.com/track/5an7rGLkzgM9DfJdTsEQmZ?si=47d2d06d39634da8" target="_blank">Listen on Spotify</a> |
-      <a href="https://youtu.be/Wdt1i_Hf-i8?si=6JJ9YCzvwOMUpoN5" target="_blank">Watch on YouTube</a>
-    </small>
+    <iframe
+      width="100%"
+      height="200"
+      data-src="https://www.youtube.com/embed/Wdt1i_Hf-i8?si=6JJ9YCzvwOMUpoN5"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
   </div>
+
+</section>
+
 
 </section>
 
@@ -160,6 +158,24 @@
       document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
+
+    <script>
+  function showTab(id) {
+    document.querySelectorAll('.tab').forEach(tab =>
+      tab.classList.remove('active')
+    );
+    document.getElementById(id).classList.add('active');
+
+    // 🔥 Music tab open hone par hi videos load hon
+    if (id === 'music') {
+      document.querySelectorAll('#music iframe').forEach(iframe => {
+        if (!iframe.src) {
+          iframe.src = iframe.dataset.src;
+        }
+      });
+    }
+  }
+</script>
 
     function sharePage() {
       const url = window.location.href;
