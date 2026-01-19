@@ -137,7 +137,7 @@ nav a.active-link::after {
     
   </section>
 
-  <section id="about" class="tab active">
+  <section id="about" class="tab">
     <div style="text-align: center;">
       <img src="profile.jpg" alt="Profile Photo" class="full-photo" />
       <p style="margin-top: 1.5rem; font-size: 1.1rem;">
@@ -200,6 +200,15 @@ nav a.active-link::after {
     }
   }
 
+  // page load hone par jo tab active hai usko highlight karo
+  window.addEventListener('DOMContentLoaded', () => {
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab) {
+      showTab(activeTab.id);
+    }
+  });
+
+        
   function sharePage() {
     const url = window.location.href;
     if (navigator.share) {
